@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script defer src="jquery-3.5.1.min.js"></script>
+    <script defer src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+    <header>
+        <a href="home.html"><img src="assets/Logo2.png" alt="" class="logo"></a>
+        <div class="navigation">
+            <img src="assets/menu.png" alt="" class="menu">
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu">
+         <div class="bannermenu"> <!-- carousel-container -->
+            <div class="slider"> <!-- slider --> <!-- carousel-slide -->
+                <div class="slide">
+                    <img src="assets/banner1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/banner2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/banner3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="dotsbox">
+                <span class="dot" onclick="currentSlide(1)" class="active"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>        
+        
+        <div class="latest-menu">
+            <h3>Latest Menu</h3>
+            <div class="latest">
+                <a class="prev" onclick="plusSlidesbox(-1)"><i class="fas fa-arrow-circle-left"></i></a>
+                <div class="latest-list">
+                    <div class="box">
+                        <img src="assets/mandu.jpg" alt="">
+                        <h4>Mandu</h4>
+                        <p>Rp 70.000</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="box">
+                        <img src="assets/omija tea.jpg" alt="">
+                        <h4>Omija Tea</h4>
+                        <p>Rp 40.000</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="box">
+                        <img src="assets/songpyeon.png" alt="">
+                        <h4>Songpyeon</h4>
+                        <p>Rp 40.000</p>
+                        <button>Order</button>
+                    </div>
+                </div>
+                <a class="next" onclick="plusSlidesbox(1)"><i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            
+        </div>
+
+        <h4>Menu</h4>
+        <div class="food">
+            <h4>Food</h4>
+            <div class="row">
+                <div class="box">
+                    <img src="assets/food1.jpg" alt="">
+                    <h4>Samgyeopsal</h4>
+                    <p>Rp 120.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/food2.jpg" alt="">
+                    <h4>Mandu</h4>
+                    <p>Rp 70.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/food3.jpg" alt="">
+                    <h4>Bibimbap</h4>
+                    <p>Rp 90.000</p>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <img src="assets/food4.jpg" alt="">
+                    <h4>Soft Tofu Stew</h4>
+                    <p>Rp 105.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/food5.jpg" alt="">
+                    <h4>Mixed Seafood Stew</h4>
+                    <p>Rp 100.000</p>
+                    <button>Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="drink">
+            <h4>Drink</h4>
+            <div class="row">
+                <div class="box">
+                    <img src="assets/drink1.jpg" alt="">
+                    <h4>Bokbunja-ju</h4>
+                    <p>Rp 50.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/drink2.jpg" alt="">
+                    <h4>Omija Tea</h4>
+                    <p>Rp 40.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/drink3.jpg" alt="">
+                    <h4>Makgeolli</h4>
+                    <p>Rp 30.000</p>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <img src="assets/drink4.jpg" alt="">
+                    <h4>Soju</h4>
+                    <p>Rp 55.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/drink5.jpg" alt="">
+                    <h4>Baekseju</h4>
+                    <p>Rp 50.000</p>
+                    <button>Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="dessert">
+            <h4>Dessert</h4>
+            <div class="row">
+                <div class="box">
+                    <img src="assets/dessert1.jpg" alt="">
+                    <h4>Dasik</h4>
+                    <p>Rp 50.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/dessert2.jpg" alt="">
+                    <h4>Hotteok</h4>
+                    <p>Rp 35.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/dessert3.jpg" alt="">
+                    <h4>Patbingsoo</h4>
+                    <p>Rp 60.000</p>
+                    <button>Order</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <img src="assets/dessert4.png" alt="">
+                    <h4>Songpyeon</h4>
+                    <p>Rp 40.000</p>
+                    <button>Order</button>
+                </div>
+                <div class="box">
+                    <img src="assets/dessert5.jpg" alt="">
+                    <h4>Makgeolli Ice</h4>
+                    <p>Rp 40.000</p>
+                    <button>Order</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Copyright &copy; 2020 by DanBam. All Rights Reserved</h4>
+        <div class="socmed">
+            <div class="ig">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="yt">
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

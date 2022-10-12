@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script defer src="contact.js"></script>
+    <script defer src="jquery-3.5.1.min.js"></script>
+    <script defer src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="assets/Logo2.png" alt="" class="logo"></a>
+        <div class="navigation">
+            <img src="assets/menu.png" alt="" class="menu">
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="contactform">
+        <h1>Contact Us!</h1>
+        <!-- <div class="containerform"> -->
+            <form action=""> 
+                <div class="formgroup">
+                    <label for="name" id="">Name</label>
+                    <input type="text" id="contact_name" placeholder="ex : Lee Kwang Soo">
+                </div>
+                <div class="formgroup">
+                    <label for="email" id="">Email</label>
+                    <input type="text" id="contact_email" placeholder="ex : kwangsoo@gmail.com">
+                </div>
+                <div class="formgroup">
+                    <label for="gender" id="">Gender</label>
+                    <div class="formgender">
+                        <input type="radio" name="gender" id="contact_gender_male" >Male
+                        <input type="radio" name="gender" id="contact_gender_female">Female
+                    </div>
+                </div>
+                <div class="formgroup">
+                    <label for="branch" id="">DanBam's Branch Location</label>
+                    <select name="" id="contact_branch">
+                        <option value="">Choose Danbam's Branch Location</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Bekasi">Bekasi</option>
+                        <option value="Bogor">Bogor</option>
+                    </select>
+                </div>
+                <div class="formgroup">
+                    <label for="message" id="">Your Message</label>
+                    <textarea name="" id="contact_message" cols="55" rows="20"></textarea>
+                </div>
+                <div class="formcheckbox">
+                    <input type="checkbox" name="" id="contact_check">Receive our latest information (optional)
+                </div>
+                <div class="formsubmit">
+                    <button type="button" onclick="validate()">Submit</button>
+                     <!-- <input type="button" value="Submit" onclick="validate()"> -->
+                </div>
+                <div class="formgroup">
+                    <span id="errormsg"></span>
+                </div>
+            </form>
+        <!-- </div> -->
+        
+    </section>
+
+    <footer>
+        <h4>Copyright &copy; 2020 by DanBam. All Rights Reserved</h4>
+        <div class="socmed">
+            <div class="ig">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="yt">
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
